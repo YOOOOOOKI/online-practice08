@@ -1,5 +1,5 @@
 'use strict';
-module.exports =function main(str)
+module.exports =function main(str)//主函数根据长度判断是barcode还是zip
 {   
    if(str.length<=10)
         {
@@ -12,7 +12,7 @@ module.exports =function main(str)
            
 } 
 
-function buildTransfer()
+function buildTransfer()//用Map来表达barcode和zip之间的关系
 {
         let list=new Map([
         [":::||",1],
@@ -88,6 +88,4 @@ function barcodeToZip(str,list)
 
 }
 
-   //console.log(calNum("95713"));
-//console.log(zipToBarcode("95713-9571",buildTransfer()));
-//console.log(barcodeToZip("||:|:::|:|:|:::|:::||::||:|:|:::|:|:|:::|:::||::||:|",buildTransfer()));
+  

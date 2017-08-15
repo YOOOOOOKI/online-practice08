@@ -2,8 +2,8 @@
 const findMid = require('./main');
 
 describe('Postnet测试', () => {
-    const zip1=95713;
-    const zip2=95713-9571;
+    const zip1="95713";
+    const zip2="95713-9571";
     const barcode1="||:|:::|:|:|:::|:::||::||::|:|:|";
     const barcode2="||:|:::|:|:|:::|:::||::||:|:|:::|:|:|:::|:::||::||:|";
 
